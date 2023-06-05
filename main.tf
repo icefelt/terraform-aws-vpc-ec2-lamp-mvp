@@ -86,7 +86,7 @@ resource "aws_instance" "example_instance" {
 
               sudo systemctl start mariadb
               
-              sudo mysql_secure_installation -y 
+              sudo mysql_secure_installation
               
               sudo systemctl status mariadb
               sudo systemctl restart httpd
